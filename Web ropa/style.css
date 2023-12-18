@@ -1,0 +1,50 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+header {
+  position: sticky;
+  width: 100%;
+}
+.navbar {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.navbar-items {
+  font-size: 16px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+.navbar-items li:hover {
+  transition: 0.5s;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.navbar-icons {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-right: 4rem;
+  gap: 1rem;
+}
+
+.nuevacoleccion-title {
+  font-size: 32px;
+  padding-left: 2rem;
+}
