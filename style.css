@@ -131,6 +131,10 @@ border-radius: 50%;
     gap: 3rem;
 
   }
+
+  .nuevacoleccion-title{
+    padding: 1em;
+  }
   .img-foot {
     font-size: 14px;
     display: flex;
@@ -141,7 +145,6 @@ border-radius: 50%;
   .navbar {
     flex-direction: column;
     position: sticky;
-    top: auto;
   }
   .navbar li{
     gap: 0;
