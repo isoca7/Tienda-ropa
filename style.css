@@ -1,33 +1,47 @@
 * {
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 header {
   position: fixed;
+  z-index: 1;
   background-color: white;
   width: 100%;
 }
+.grid-areas {
+  display: grid;
+  grid-template-areas: "header header " ".nuevacoleccion-title main " ;
+}
+
 .navbar {
   padding-left: 2rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  flex-wrap: wrap;
+  padding: 1rem;
   justify-content: space-between;
   border-bottom: 1px solid black;
 }
-
+.header {
+  grid-area: header;
+}
 .navbar-items {
   font-size: 16px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   gap: 4rem;
+}
+.fa-sharp{
+ cursor: pointer;
 }
 .navbar-items li:hover {
   transition: 0.25s;
@@ -39,6 +53,7 @@ header {
 
 .navbar-icons {
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   list-style: none;
   padding-right: 4rem;
@@ -47,8 +62,8 @@ header {
 
 .nuevacoleccion-title {
   font-size: 32px;
-  padding: 1rem;
-  padding-left: 2rem;
+  padding: 5rem;
+  grid-area: ".nuevacoleccion-title";
 }
 
 .grid-clothes {
@@ -56,21 +71,17 @@ header {
   grid-template-columns: auto auto auto;
   justify-content: center;
   align-items: center;
-  gap:5rem;
+  gap: 5rem;
+  grid-area: main;
 }
 
-.item{
-  text-align:center ;
+.item {
+  text-align: center;
   justify-content: center;
-  
-  
-  
 }
-
 
 .grid-clothes img {
   border-radius: 1rem;
- 
 }
 .item:hover {
   transition: 0.25s;
@@ -90,26 +101,102 @@ header {
   padding: 1rem;
 }
 
-.precio{
+.precio {
   font-weight: bolder;
 }
+footer {
+  padding: 2rem;
+  margin-top: 3.5rem;
+  background-color: #212429;
+  font-size: 16px;
+ 
+}
+
+footer ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  list-style: none;
+  color: white;
+  gap: 3rem;
+}
+
+
+footer i{
+color: #212429;
+background: white;
+padding: 1em;
+display: inline-block;
+text-align: center;
+vertical-align: middle;
+width: 25px;
+line-height: 30px;
+margin-right:0.70em;
+border-radius: 50%;
+}
+
 
 @media (max-width: 800px) {
   .grid-clothes {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-    align-items: center;}
-    .img-foot {
-      font-size: 14px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 1rem 4rem;
-    }
-    header {
-      position: fixed;
-      background-color: white;
-      width: 100%;
-    }
+    align-items: center;
+  }
+  .img-foot {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 4rem;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar li{
+    gap: 0;
+    margin:0%
+  }
+  .navbar-items{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    
+    gap: 0rem;
+  }
+  .navbar-icons{
+    justify-content: center;
+    align-items: center;
+    padding-right: 0%;
+  }
+  .fa-sharp{
+    padding-right: 95%;
+    padding-top: 0.5rem;
+   }
+
+   footer ul{
+      flex-direction: column;
+      align-items: flex-start;
+      
+   }
+   footer ul li{
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+   }
+
+}
+
+@media (max-width: 920px) {
+  .navbar-items{
+    gap: 1rem;
+    align-items: center;
+  }
+  .navbar-icons{
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+  }
 }

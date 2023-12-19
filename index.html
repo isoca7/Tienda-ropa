@@ -19,80 +19,89 @@
     <title>Tienda de ropa</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <i class="fa-sharp fa-solid fa-bars fa-lg"></i>
-        <ul class="navbar-items">
-          <li>MODA MUJER</li>
-          <li>MODA HOMBRE</li>
-          <li>NUEVA COLECCIÓN</li>
-          <li>COLECCIONES ESPECIALES</li>
+    <div class="grid-areas">
+      <!----------------------- Menu ----------------------->
+      <header>
+        <nav class="navbar">
+          <i class="fa-sharp fa-solid fa-bars fa-lg"></i>
+          <ul class="navbar-items">
+            <li>MODA MUJER</li>
+            <li>MODA HOMBRE</li>
+            <li>NUEVA COLECCIÓN</li>
+            <li>COLECCIONES ESPECIALES</li>
+          </ul>
+          <!----------------------- Iconos de menu ----------------------->
+          <ul class="navbar-icons">
+            <li><i class="fa-regular fa-user fa-lg"></i></li>
+            <li><i class="fa-regular fa-heart fa-lg"></i></li>
+            <li><i class="fa-solid fa-cart-shopping fa-lg"></i></li>
+          </ul>
+        </nav>
+      </header>
+      <!----------------------- Sección principal ----------------------->
+      <main class="nueva-coleccion">
+        <h1 class="nuevacoleccion-title">NUEVAS COLECCIONES</h1>
+        <!----------------------- Grid con las tarjetas ----------------------->
+        <div class="grid-clothes">
+          <div class="item">
+            <img src="./img/image-1.jpg" alt="camisa beige" />
+            <section class="img-foot">
+              <div class="tipo">Camisa</div>
+              <div class="precio">25.00 €</div>
+            </section>
+          </div>
+          <div class="item">
+            <img src="./img/image-2.jpg" alt="camiseta blanca" />
+            <section class="img-foot">
+              <div class="tipo">Camiseta</div>
+              <div class="precio">22.99 €</div>
+            </section>
+          </div>
+          <div class="item">
+            <img src="./img/image-3.jpg" alt="vestido verde" />
+            <section class="img-foot">
+              <div class="tipo">Vestido</div>
+              <div class="precio">34.99 €</div>
+            </section>
+          </div>
+          <div class="item">
+            <img src="./img/image-4.jpg" alt="pantalones largos blancos" />
+            <section class="img-foot">
+              <div class="tipo">Vaqueros</div>
+              <div class="precio">79.99 €</div>
+            </section>
+          </div>
+          <div class="item">
+            <img src="./img/image-5.jpg" alt="polo marron" />
+            <section class="img-foot">
+              <div class="tipo">Polo</div>
+              <div class="precio">44.95 €</div>
+            </section>
+          </div>
+          <div class="item">
+            <img src="./img/image-6.jpg" alt="camisa y pantalon amarillo" />
+            <section class="img-foot">
+              <div class="tipo">Conjunto</div>
+              <div class="precio">56.99 €</div>
+            </section>
+          </div>
+        </div>
+      </main>
+        <!----------------------- Pie de pagina ----------------------->
+      <footer>
+        <ul>
+          <li>
+            <i class="fa-solid fa-truck-fast fa-xl footer-icon"></i>Entrega
+          </li>
+          <li>Devoluciones y cambio</li>
+          <li>
+            <i class="fa-solid fa-phone fa-xl footer-icon"></i>(+39) 4561290
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope fa-xl footer-icon"></i>shop@omix.com
+          </li>
         </ul>
-        <ul class="navbar-icons">
-          <li><i class="fa-regular fa-user fa-lg"></i></li>
-          <li><i class="fa-regular fa-heart fa-lg"></i></li>
-          <li><i class="fa-solid fa-cart-shopping fa-lg"></i></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="nueva-coleccion">
-      <h2 class="nuevacoleccion-title">NUEVAS COLECCIONES</h2>
-      <div class="grid-clothes">
-        <div class="item">
-          <img src="./img/image-1.jpg" alt="camisa beige" srcset="" />
-          <section class="img-foot">
-            <div class="tipo">Camisa</div>
-            <div class="precio">25.00 €</div>
-          </section>
-        </div>
-        <div class="item">
-          <img src="./img/image-2.jpg" alt="camiseta blanca" srcset="" />
-          <section class="img-foot">
-            <div class="tipo">Camiseta</div>
-            <div class="precio">22.99 €</div>
-          </section>
-        </div>
-        <div class="item">
-          <img src="./img/image-3.jpg" alt="vestido verde" srcset="" />
-          <section class="img-foot">
-            <div class="tipo">Vestido</div>
-            <div class="precio">34.99 €</div>
-          </section>
-        </div>
-        <div class="item">
-          <img
-            src="./img/image-4.jpg"
-            alt="pantalones largos blancos"
-            srcset=""
-          />
-          <section class="img-foot">
-            <div class="tipo">Vaqueros</div>
-            <div class="precio">79.99 €</div>
-          </section>
-        </div>
-        <div class="item">
-          <img src="./img/image-5.jpg" alt="polo marron" srcset="" />
-          <section class="img-foot">
-            <div class="tipo">Polo</div>
-            <div class="precio">44.95 €</div>
-          </section>
-        </div>
-        <div class="item">
-          <img
-            src="./img/image-6.jpg"
-            alt="camisa y pantalon amarillo"
-            srcset=""
-          />
-          <section class="img-foot">
-            <div class="tipo">Conjunto</div>
-            <div class="precio">56.99 €</div>
-          </section>
-        </div>
-      </div>
-    </section>
-
-    <footer></footer>
+      </footer>
+    </div>
   </body>
 </html>
-
-
